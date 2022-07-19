@@ -1,0 +1,84 @@
+$primary-text-color: #fff;
+$font-stack: "Poppins", sans-serif;
+
+body {
+  font-family: $font-stack;
+  color: $primary-text-color;
+  font-size: 18px;
+  line-height: 33px;
+  font-weight: 400;
+  // overflow-x: hidden;
+  // overflow-y: hidden;
+  background-color: #0997ff;
+  z-index: 0;
+}
+
+.background__img {
+  position: absolute;
+  width: 3184px;
+  height: 3554px;
+  left: 0px;
+  top: -460px;
+  opacity: 0.2;
+  z-index: 1;
+}
+
+.content {
+  z-index: 2;
+  width: 1658px;
+  height: 1450px;
+  background-color: #1c1e2a;
+  margin: 262px auto 248px auto;
+  border-radius: 30px;
+  display: flex;
+  .sidebar {
+    box-sizing: border-box;
+    max-width: 380px;
+    border-right: #9b9da0 1px solid;
+
+    &__header {
+      margin: 134px auto 0 81px;
+    }
+    &__item {
+      margin-top: 24px;
+      padding-left: 57px;
+    }
+    &__menu {
+      margin-top: 154px;
+      margin-left: 81px;
+    }
+    &__resources {
+      margin-top: 134px;
+      margin-left: 81px;
+    }
+    &__advertise {
+      margin: 240px 62px 58px 62px;
+      border-radius: 15px;
+      max-width: 267px;
+      max-height: 318px;
+      background-image: url("../img/advertise__img.jpg");
+      .advertise__header {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 128%;
+        color: #fff9f9;
+        padding: 29px 33px 0 20px;
+      }
+      .advertise__button {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 128%;
+        color: #000000;
+        background-color: #fff;
+        border-radius: 12px;
+        padding: 20px 18px 20px 18px;
+        margin: 56px auto 35px 20px;
+        .button__img {
+          margin-left: 31px;
+          width: 24px;
+          height: 24px;
+        }
+      }
+    }
+  }
+}
