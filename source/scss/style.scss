@@ -9,22 +9,12 @@ body {
   font-weight: 400;
   // overflow-x: hidden;
   // overflow-y: hidden;
-  background-color: #0997ff;
-  z-index: 0;
-}
-
-.background__img {
-  position: absolute;
-  width: 3184px;
-  height: 3554px;
-  left: 0px;
-  top: -460px;
-  opacity: 0.2;
-  z-index: 1;
+  background-color: pink;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .content {
-  z-index: 2;
   width: 1658px;
   height: 1450px;
   background-color: #1c1e2a;
@@ -42,7 +32,63 @@ body {
     &__item {
       margin-top: 24px;
       padding-left: 57px;
+      background-position: left;
+      background-repeat: no-repeat;
+      cursor: pointer;
+      &:hover > a {
+        color: #0997ff;
+      }
+      &--dashboard {
+        background-image: url(../img/dashboard.svg);
+        &:hover {
+          background-image: url(../img/dashboard-BLUE.svg);
+        }
+      }
+
+      &--marketplace {
+        background-image: url(../img/marketplace.svg);
+        &:hover {
+          background-image: url(../img/marketplace-BLUE.svg);
+        }
+      }
+      &--messages {
+        background-image: url(../img/Message.svg);
+        &:hover {
+          background-image: url(../img/Message-BLUE.svg);
+        }
+      }
+      &--myCollection {
+        background-image: url(../img/myCollections.svg);
+        &:hover {
+          background-image: url(../img/myCollections-BLUE.svg);
+        }
+      }
+      &--wallet {
+        background-image: url(../img/Wallet.svg);
+        &:hover {
+          background-image: url(../img/Wallet-BLUE.svg);
+        }
+      }
+      &--history {
+        background-image: url(../img/History.svg);
+        &:hover {
+          background-image: url(../img/History-BLUE.svg);
+        }
+      }
+      &--settings {
+        background-image: url(../img/Setting.svg);
+        &:hover {
+          background-image: url(../img/Setting-BLUE.svg);
+        }
+      }
+      &--Resources {
+        background-image: url(../img/resources.svg);
+        &:hover {
+          background-image: url(../img/resources-BLUE.svg);
+        }
+      }
     }
+
     &__menu {
       margin-top: 154px;
       margin-left: 81px;
@@ -56,7 +102,7 @@ body {
       border-radius: 15px;
       max-width: 267px;
       max-height: 318px;
-      background-image: url("../img/advertise__img.jpg");
+      background-image: url("../img/ad.jpg");
       .advertise__header {
         font-weight: 700;
         font-size: 36px;
@@ -65,15 +111,24 @@ body {
         padding: 29px 33px 0 20px;
       }
       .advertise__button {
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 128%;
-        color: #000000;
         background-color: #fff;
+        border: #fff;
         border-radius: 12px;
         padding: 20px 18px 20px 18px;
         margin: 56px auto 35px 20px;
+        a {
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 20px;
+          color: #000000;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
         .button__img {
+          margin-top: auto;
+          margin-bottom: auto;
           margin-left: 31px;
           width: 24px;
           height: 24px;

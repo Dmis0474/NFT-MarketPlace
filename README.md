@@ -25,6 +25,6 @@ npm run watch
 npm run build
 ```
 
-
 ### template
-https://www.figma.com/file/vsXIsYNDXu0jUl9osztq5d/PrivateJetBooking?node-id=0%3A3
+
+https://www.figma.com/file/He6U5hLgoUfpuTiiDX26SW/NFT-MarketPlace-(Community)?node-id=175%3A1197
