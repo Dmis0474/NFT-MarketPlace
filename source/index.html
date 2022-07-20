@@ -25,25 +25,92 @@
     <div class="content">
       <div class="sidebar">
         <ul class="sidebar__header">
-          <li class="sidebar__item sidebar__item--dashboard"><a>Dashboard</a></li>
-          <li class="sidebar__item sidebar__item--marketplace"><a>Marketplace</a></li>
+          <li class="sidebar__item sidebar__item--dashboard">
+            <a>Dashboard</a>
+          </li>
+          <li class="sidebar__item sidebar__item--marketplace">
+            <a>Marketplace</a>
+          </li>
           <li class="sidebar__item sidebar__item--messages"><a>Messages</a></li>
         </ul>
         <ul class="sidebar__menu">
-          <li class="sidebar__item sidebar__item--myCollection"><a>My Collection</a></li>
+          <li class="sidebar__item sidebar__item--myCollection">
+            <a>My Collection</a>
+          </li>
           <li class="sidebar__item sidebar__item--wallet"><a>Wallet</a></li>
           <li class="sidebar__item sidebar__item--history"><a>History</a></li>
           <li class="sidebar__item sidebar__item--settings"><a>Settings</a></li>
         </ul>
-        <div class="sidebar__resources sidebar__item sidebar__item--Resources"><a>Resources</a></div>
+        <div class="sidebar__resources sidebar__item sidebar__item--Resources">
+          <a>Resources</a>
+        </div>
         <div class="sidebar__advertise">
           <h2 class="advertise__header">Earn up to $100 worth of NFT</h2>
-          <button class="advertise__button"><a>Learn More <img src="img/button__img.svg" alt="" class="button__img"></a></button>
+          <button class="advertise__button">
+            <a
+              >Learn More
+              <img src="img/button__img.svg" alt="" class="button__img"
+            /></a>
+          </button>
         </div>
       </div>
-      <div class="mainArea"></div>
+      <div class="mainArea">
+        <div class="mainArea__header">
+          <div class="mainArea__search">
+            <input
+              placeholder="Search items, collection, accounts"
+              class="mainArea__input"
+              maxlength="20"
+            />
+          </div>
+
+          <div class="mainArea__registr">
+            <img
+              src="img/Notification.svg"
+              alt=""
+              class="registration__notifications"
+            />
+            <img src="img/Avatar.png" alt="" class="registration__avatar" />
+            <a href="" class="registration__enter">
+              <p>Doadesignz</p>
+            </a>
+          </div>
+        </div>
+        <div class="mainArea__advertise">
+          <div class="advertise__items">
+            <h1 class="advertise__header">
+              Discover, Collect & Create your own NFT
+            </h1>
+            <p class="advertise__discription">
+              Search items, collection, accounts
+            </p>
+            <div class="advertise__buttons">
+              <button class="button advertise__button">Discover Now</button>
+              <button class="button advertise__button">Create your NFT</button>
+            </div>
+          </div>
+          <img src="img/qwer__img.png" alt="" class="advertise__img" />
+        </div>
+        <div class="mainArea__items">
+          <div class="itemsHeader">
+            <div class="itemsHeader__items">
+              <h3 class="itemsHeader__label">All NFTS</h3>
+              <p class="itemsHeader__item">2,345,678 items</p>
+            </div>
+            <a href="" class="itemsHeader__link">See all</a>
+          </div>
+          <ul class="itemsList">
+            <li class="itemsList__item itemsList__item--popular"><a class="item__link item__link--popular" href="">Popular</a></li>
+            <li class="itemsList__item itemsList__item--arts"><a class="item__link item__link--arts" href="">Arts</a></li>
+            <li class="itemsList__item itemsList__item--games"><a class="item__link item__link--games" href="">Games</a></li>
+            <li class="itemsList__item itemsList__item--music"><a class="item__link item__link--music" href="">Music</a></li>
+            <li class="itemsList__item itemsList__item--sport"><a class="item__link item__link--sports" href="">Sports</a></li>
+            <li class="itemsList__item itemsList__item--photography"><a class="item__link item__link--photography" href="">Photography</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
-    
+
     <!-- inject:js -->
     <script src="/jsmin/jquery/jquery.min.js"></script>
     <script src="/jsmin/slick/slick.min.js"></script>
