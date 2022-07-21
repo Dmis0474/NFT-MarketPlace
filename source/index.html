@@ -22,66 +22,66 @@
 
   <body>
     <!-- <img src="img/background.png" alt="" class="background__img" /> -->
-    <div class="content">
+    <div class="container">
       <div class="sidebar">
         <ul class="sidebar__header">
           <li class="sidebar__item sidebar__item--dashboard">
-            <a>Dashboard</a>
+            <a href="#">Dashboard</a>
           </li>
           <li class="sidebar__item sidebar__item--marketplace">
-            <a>Marketplace</a>
+            <a href="#">Marketplace</a>
           </li>
           <li class="sidebar__item sidebar__item--messages"><a>Messages</a></li>
         </ul>
         <ul class="sidebar__menu">
           <li class="sidebar__item sidebar__item--myCollection">
-            <a>My Collection</a>
+            <a href="#">My Collection</a>
           </li>
           <li class="sidebar__item sidebar__item--wallet"><a>Wallet</a></li>
           <li class="sidebar__item sidebar__item--history"><a>History</a></li>
           <li class="sidebar__item sidebar__item--settings"><a>Settings</a></li>
         </ul>
         <div class="sidebar__resources sidebar__item sidebar__item--Resources">
-          <a>Resources</a>
+          <a href="#">Resources</a>
         </div>
         <div class="sidebar__advertise">
           <h2 class="advertise__header">Earn up to $100 worth of NFT</h2>
           <button class="advertise__button">
-            <a
+            <a href="#"
               >Learn More
-              <img src="img/button__img.svg" alt="" class="button__img"
-            /></a>
+              <img src="img/button__img.svg" alt="" class="button__img" />
+            </a>
           </button>
         </div>
       </div>
       <div class="mainArea">
-        <div class="mainArea__header">
-          <div class="mainArea__search">
+        <div class="header">
+          <div class="header__search">
             <input
               placeholder="Search items, collection, accounts"
-              class="mainArea__input"
+              class="header__input"
               maxlength="20"
             />
           </div>
 
-          <div class="mainArea__registr">
+          <div class="header__registr">
             <img
               src="img/Notification.svg"
               alt=""
               class="registration__notifications"
             />
             <img src="img/Avatar.png" alt="" class="registration__avatar" />
-            <a href="" class="registration__enter">
+            <a href="#" class="registration__enter">
               <p>Doadesignz</p>
             </a>
           </div>
         </div>
-        <div class="mainArea__advertise">
+        <div class="advertise">
           <div class="advertise__items">
             <h1 class="advertise__header">
               Discover, Collect & Create your own NFT
             </h1>
-            <p class="advertise__discription">
+            <p class="advertise__description">
               Search items, collection, accounts
             </p>
             <div class="advertise__buttons">
@@ -91,25 +91,311 @@
           </div>
           <img src="img/qwer__img.png" alt="" class="advertise__img" />
         </div>
-        <div class="mainArea__items">
-          <div class="itemsHeader">
-            <div class="itemsHeader__items">
-              <h3 class="itemsHeader__label">All NFTS</h3>
-              <p class="itemsHeader__item">2,345,678 items</p>
+        <div class="allNfts">
+          <div class="allNfts__header">
+            <div class="allNfts__items">
+              <h3 class="allNfts__label">All NFTS</h3>
+              <p class="allNfts__item">2,345,678 items</p>
             </div>
-            <a href="" class="itemsHeader__link">See all</a>
+            <a href="#" class="allNfts__link">See all</a>
           </div>
           <ul class="itemsList">
-            <li class="itemsList__item itemsList__item--popular"><a class="item__link item__link--popular" href="">Popular</a></li>
-            <li class="itemsList__item itemsList__item--arts"><a class="item__link item__link--arts" href="">Arts</a></li>
-            <li class="itemsList__item itemsList__item--games"><a class="item__link item__link--games" href="">Games</a></li>
-            <li class="itemsList__item itemsList__item--music"><a class="item__link item__link--music" href="">Music</a></li>
-            <li class="itemsList__item itemsList__item--sport"><a class="item__link item__link--sports" href="">Sports</a></li>
-            <li class="itemsList__item itemsList__item--photography"><a class="item__link item__link--photography" href="">Photography</a></li>
+            <li class="itemsList__item itemsList__item--popular">
+              <a class="item__link item__link--popular" href="#">Popular</a>
+            </li>
+            <li class="itemsList__item itemsList__item--arts">
+              <a class="item__link item__link--arts" href="#">Arts</a>
+            </li>
+            <li class="itemsList__item itemsList__item--games">
+              <a class="item__link item__link--games" href="#">Games</a>
+            </li>
+            <li class="itemsList__item itemsList__item--music">
+              <a class="item__link item__link--music" href="#">Music</a>
+            </li>
+            <li class="itemsList__item itemsList__item--sport">
+              <a class="item__link item__link--sports" href="#">Sports</a>
+            </li>
+            <li class="itemsList__item itemsList__item--photography">
+              <a class="item__link item__link--photography" href="#"
+                >Photography</a
+              >
+            </li>
           </ul>
         </div>
+        <div class="allNfts__cards">
+          <div class="allNfts__card">
+            <img src="img/card__img1.png" alt="" class="card__img" />
+            <div class="card__info">
+              <div class="card__header">
+                <div class="cardHeader__info">
+                  <h4 class="cardHeader__titile">The Future wave #23</h4>
+                  <p class="cardHeader__description">@spaceman</p>
+                </div>
+                <div class="avatar__area">
+                  <img
+                    src="img/card__avatar1.png"
+                    alt=""
+                    class="card__avatar"
+                  />
+                </div>
+              </div>
+              <div class="card__footer">
+                <div class="cardFooter__price">
+                  <p class="price__title">Current Bid</p>
+                  <p class="price__summ">0.24 BTC</p>
+                </div>
+                <div class="cardFooter__time">
+                  <p class="price__title time__title">Ending in</p>
+                  <p class="time__summ">12h 14m 16s</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="allNfts__card">
+            <img src="img/card__img2.png" alt="" class="card__img" />
+            <div class="card__info">
+              <div class="card__header">
+                <div class="cardHeader__info">
+                  <h4 class="cardHeader__titile">The Future wave #23</h4>
+                  <p class="cardHeader__description">@spaceman</p>
+                </div>
+                <div class="avatar__area">
+                  <img
+                    src="img/card__avatar2.png"
+                    alt=""
+                    class="card__avatar"
+                  />
+                </div>
+              </div>
+              <div class="card__footer">
+                <div class="cardFooter__price">
+                  <p class="price__title">Current Bid</p>
+                  <p class="price__summ">0.24 BTC</p>
+                </div>
+                <div class="cardFooter__time">
+                  <p class="price__title time__title">Ending in</p>
+                  <p class="time__summ">12h 14m 16s</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="allNfts__card">
+            <img src="img/card__img3.png" alt="" class="card__img" />
+            <div class="card__info">
+              <div class="card__header">
+                <div class="cardHeader__info">
+                  <h4 class="cardHeader__titile">The Future wave #23</h4>
+                  <p class="cardHeader__description">@spaceman</p>
+                </div>
+                <div class="avatar__area">
+                  <img
+                    src="img/card__avatar3.png"
+                    alt=""
+                    class="card__avatar"
+                  />
+                </div>
+              </div>
+              <div class="card__footer">
+                <div class="cardFooter__price">
+                  <p class="price__title">Current Bid</p>
+                  <p class="price__summ">0.24 BTC</p>
+                </div>
+                <div class="cardFooter__time">
+                  <p class="price__title time__title">Ending in</p>
+                  <p class="time__summ">12h 14m 16s</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="allNfts__header topNfts__header">
+          <div class="allNfts__items topNfts__items">
+            <h3 class="allNfts__label topNfts__label">Top NFTS</h3>
+            <p class="allNfts__item topNfts__item">564 Creators</p>
+          </div>
+          <a href="#" class="allNfts__link topNfts__link">See all</a>
+        </div>
+        <footer class="footer">
+          <ul class="footer__header">
+            <li class="footerHeader__item footerHeader__item--collection">
+              Collection
+            </li>
+            <li class="footerHeader__item footerHeader__item--volume">
+              Volume
+            </li>
+            <li class="footerHeader__item footerHeader__item--percent">
+              24h %
+            </li>
+            <li class="footerHeader__item footerHeader__item--owners">
+              Owners
+            </li>
+            <li class="footerHeader__item footerHeader__item--items">Items</li>
+          </ul>
+          <hr />
+          <div class="topNfts__items">
+            <div class="topNfts__item">
+              <div class="topNfts__collection">
+                <img src="img/topNft__icon1.png" alt="" class="topNfts__icon" />
+                <div class="collection__description">
+                  <h5 class="description__label">Cool Cyber Apes</h5>
+                  <p class="description__autor">@cybasseman</p>
+                </div>
+              </div>
+              <ul class="collection__properties">
+                <li class="properties__item properties__item--volume">
+                  0.24 BTC
+                </li>
+                <li class="properties__item properties__item--percent">+25%</li>
+                <li class="properties__item properties__item--owners">5.5k</li>
+                <li class="properties__item properties__item--items">12.5k</li>
+              </ul>
+            </div>
+            <div class="topNfts__item">
+              <div class="topNfts__collection">
+                <img src="img/topNft__icon2.png" alt="" class="topNfts__icon" />
+                <div class="collection__description">
+                  <h5 class="description__label">Cool Cyber Apes</h5>
+                  <p class="description__autor">@cybasseman</p>
+                </div>
+              </div>
+              <ul class="collection__properties">
+                <li class="properties__item properties__item--volume">
+                  0.24 BTC
+                </li>
+                <li class="properties__item properties__item--percent">-15%</li>
+                <li class="properties__item properties__item--owners">5.5k</li>
+                <li class="properties__item properties__item--items">12.5k</li>
+              </ul>
+            </div>
+            <div class="topNfts__item">
+              <div class="topNfts__collection">
+                <img src="img/topNft__icon3.png" alt="" class="topNfts__icon" />
+                <div class="collection__description">
+                  <h5 class="description__label">Cool Cyber Apes</h5>
+                  <p class="description__autor">@cybasseman</p>
+                </div>
+              </div>
+              <ul class="collection__properties">
+                <li class="properties__item properties__item--volume">
+                  0.24 BTC
+                </li>
+                <li class="properties__item properties__item--percent">+25%</li>
+                <li class="properties__item properties__item--owners">5.5k</li>
+                <li class="properties__item properties__item--items">12.5k</li>
+              </ul>
+            </div>
+            <div class="topNfts__item">
+              <div class="topNfts__collection">
+                <img src="img/topNft__icon4.png" alt="" class="topNfts__icon" />
+                <div class="collection__description">
+                  <h5 class="description__label">Cool Cyber Apes</h5>
+                  <p class="description__autor">@cybasseman</p>
+                </div>
+              </div>
+              <ul class="collection__properties">
+                <li class="properties__item properties__item--volume">
+                  0.24 BTC
+                </li>
+                <li class="properties__item properties__item--percent">-11%</li>
+                <li class="properties__item properties__item--owners">5.5k</li>
+                <li class="properties__item properties__item--items">12.5k</li>
+              </ul>
+            </div>
+          </div>
+        </footer>
+        
+        <img src="img/showMenu-icon.png" alt="" class="hiddenSidebar__icon" onclick="showMenu()"/>
       </div>
     </div>
+    <div class="hiddenSidebar">
+      <div class="hiddenSidebar__header">
+        <p class="hiddenSidebar__title">Your Balance</p>
+        <p class="hiddenSidebar__balance">$350,000.20</p>
+        <ul class="hiddenSidebar__offers">
+          <li class="offers__item offers__item--total">Total Offers</li>
+          <li class="offers__item offers__item--summ">USD 158,000</li>
+          <li class="offers__item offers__item--percent">(59.11%)</li>
+        </ul>
+        <div class="hiddenSidebar__tokenArea">
+          <p class="token">sdfgcghjhkb21687udwhjknscnkjkj....</p>
+          <a href="#" class="token__button"><img src="img/tok.png" alt=""></a>
+        </div>
+        <button class="button hiddenSidebar__topUpButton">
+          <img src="img/topUp_icon.svg" alt="" class="topUpButton__img">
+           <p>TopUp Balance</p>
+        </button>
+      </div>
+      <div class="hiddenSidebar__header topSalers">
+        <div class="topSalers__header">
+          <h3 class="topSalers__label">Top Sellers</h3>
+          <a href="#" class="allNfts__link topSalers__link">See all</a>
+        </div>
+        <ul class="topSalers__items">
+          <li class="topSalers__item">
+            <div class="topSalers__personality">
+              <img src="img/salers1.png" alt="" class="salers__avatar">
+            <div class="salers__info">
+              <p class="salers__name">Sam Lee</p>
+              <p class="salers__co">@samlee</p>
+            </div>
+            </div>
+            <button class="button salers__button">Follow</button>
+          </li>
+          <li class="topSalers__item">
+            <div class="topSalers__personality">
+              <img src="img/salers2.png" alt="" class="salers__avatar">
+            <div class="salers__info">
+              <p class="salers__name">Jane Donald</p>
+              <p class="salers__co">@janedoe</p>
+            </div>
+            </div>
+            <button class="button salers__button">Follow</button>
+          </li>
+          <li class="topSalers__item">
+            <div class="topSalers__personality">
+              <img src="img/salers3.png" alt="" class="salers__avatar">
+            <div class="salers__info">
+              <p class="salers__name">Lois Lane</p>
+              <p class="salers__co">@supermanschic</p>
+            </div>
+            </div>
+            <button class="button salers__button">Follow</button>
+          </li>
+          <li class="topSalers__item">
+            <div class="topSalers__personality">
+              <img src="img/salers4.png" alt="" class="salers__avatar">
+            <div class="salers__info">
+              <p class="salers__name">Barry Allen</p>
+              <p class="salers__co">@Flash</p>
+            </div>
+            </div>
+            <button class="button salers__button">Follow</button>
+          </li>
+          <li class="topSalers__item">
+            <div class="topSalers__personality">
+              <img src="img/salers5.png" alt="" class="salers__avatar">
+            <div class="salers__info">
+              <p class="salers__name">Jenner Foster</p>
+              <p class="salers__co">@jennerfos</p>
+            </div>
+            </div>
+            <button class="button salers__button">Follow</button>
+          </li>
+          <li class="topSalers__item">
+            <div class="topSalers__personality">
+              <img src="img/salers1.png" alt="" class="salers__avatar">
+            <div class="salers__info">
+              <p class="salers__name">Sam Lee</p>
+              <p class="salers__co">@samlee</p>
+            </div>
+            </div>
+            <button class="button salers__button">Follow</button>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+    
 
     <!-- inject:js -->
     <script src="/jsmin/jquery/jquery.min.js"></script>

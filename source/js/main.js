@@ -1,5 +1,5 @@
 function showMenu() {
-  document.querySelector(".header__menu").classList.toggle("active");
+  $(".hiddenSidebar").css('display','block');
 }
 
 $(document).ready(function () {

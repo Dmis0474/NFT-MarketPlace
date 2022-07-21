@@ -14,12 +14,13 @@ body {
   background-repeat: no-repeat;
 }
 
-.content {
-  max-width: 1920px;
-  max-height: 1450px;
+a {
+  text-decoration: none;
+}
+
+.container {
   background-color: #1c1e2a;
   margin: 262px auto 248px auto;
-  // border-radius: 30px;
   display: flex;
   .sidebar {
     box-sizing: border-box;
@@ -35,6 +36,10 @@ body {
       background-position: left;
       background-repeat: no-repeat;
       cursor: pointer;
+      a {
+        text-decoration: none;
+        color: #d9d9d9;
+      }
       &:hover > a {
         color: #0997ff;
       }
@@ -145,61 +150,60 @@ body {
   padding-left: 30px;
   padding-right: 30px;
   box-sizing: border-box;
-  &__header {
+
+  &:hover > .hiddenSidebar__icon {
+    display: block;
+  }
+
+  .header {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
     margin: 28px 121px 0px 121px;
-  }
 
-  &__search {
-    border-radius: 12px;
-    min-width: 440px;
-    padding: 16px 86px 17px 23px;
-    background-color: #2e3140;
-
-    .mainArea__input {
-      cursor: pointer;
+    &__search {
+      border-radius: 12px;
+      min-width: 440px;
+      padding: 16px 86px 17px 23px;
       background-color: #2e3140;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 27px;
-      color: #a3b2c8;
-      border: 0px;
-      width: 60%;
-      background-image: url("../img/Search_input.svg");
-      background-repeat: no-repeat;
-      background-position: left;
-      padding-left: 38px;
+
+      .header__input {
+        cursor: pointer;
+        background-color: #2e3140;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 27px;
+        color: #a3b2c8;
+        border: 0px;
+        width: 60%;
+        background-image: url("../img/Search_input.svg");
+        background-repeat: no-repeat;
+        background-position: left;
+        padding-left: 38px;
+      }
     }
-  }
-  &__registr {
-    display: flex;
-    justify-content: start;
-    flex-direction: row;
-    align-items: center;
-    gap: 24px;
+    &__registr {
+      display: flex;
+      justify-content: start;
+      flex-direction: row;
+      align-items: center;
+      gap: 24px;
+      .registration__enter {
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 27px;
+        padding-right: 22px;
+        color: #d9d9d9;
+        background-image: url("../img/regist_arrow.svg");
+        background-repeat: no-repeat;
+        background-position: right;
+      }
+    }
   }
 
-  &__registr {
-    display: flex;
-    justify-content: start;
-    flex-direction: row;
-    align-items: center;
-    .registration__enter {
-      text-decoration: none;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 27px;
-      padding-right: 22px;
-      color: #d9d9d9;
-      background-image: url("../img/regist_arrow.svg");
-      background-repeat: no-repeat;
-      background-position: right;
-    }
-  }
-  &__advertise {
+  .advertise {
     background-image: url("../img/qwer__background.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -207,12 +211,12 @@ body {
     display: flex;
     justify-content: space-between;
     border-radius: 12px;
-    .advertise__items {
+    &__items {
       margin: 32px auto 39px 53px;
     }
-    .advertise__img {
+    &__img {
     }
-    .advertise__header {
+    &__header {
       font-style: normal;
       font-weight: 700;
       font-size: 48px;
@@ -220,14 +224,14 @@ body {
       color: #fff9f9;
       max-width: 468px;
     }
-    .advertise__discription {
+    &__description {
       font-weight: 400;
       font-size: 16px;
       line-height: 27px;
       color: #ffffff;
       margin-top: 11px;
     }
-    .advertise__buttons {
+    &__buttons {
       display: flex;
       justify-content: start;
       gap: 16px;
@@ -239,14 +243,14 @@ body {
     }
   }
 
-  &__items {
+  .allNfts {
     margin-top: 56px;
-    .itemsHeader {
+    &__header {
       display: flex;
       justify-content: space-between;
       flex-direction: row;
       align-items: center;
-      &__items {
+      .allNfts__items {
         display: flex;
         flex-direction: row;
         align-items: flex-end;
@@ -287,8 +291,7 @@ body {
         padding: 6px 25px 6px 7px;
         background-color: #262c3a;
         border-radius: 12px;
-        
-        
+
         .item__link {
           display: block;
           padding-left: 48px;
@@ -297,7 +300,7 @@ body {
           font-size: 14px;
           line-height: 24px;
           color: #9b9da0;
-          
+
           background-repeat: no-repeat;
           min-height: 36px;
           padding-top: 5px;
@@ -322,9 +325,190 @@ body {
         }
       }
     }
+    &__cards {
+      margin-top: 30px;
+      display: flex;
+      justify-content: start;
+      gap: 23px;
+    }
+    &__card {
+      padding: 13px;
+      background: #262c3a;
+      border-radius: 12px;
+
+      .card__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: -10px;
+        .cardHeader__title {
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 23px;
+          color: #ffffff;
+        }
+        .cardHeader__description {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 16px;
+          color: #9b9da0;
+        }
+        .card__avatar {
+          width: 36px;
+          height: 36px;
+          margin-top: 13px;
+        }
+      }
+
+      .card__footer {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+        .price__title {
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 14px;
+          color: #9b9da0;
+        }
+        .price__summ {
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 114%;
+          color: #ffffff;
+          margin-top: 3px;
+          padding-left: 21px;
+          background-image: url("../img/price_summ-icon.png");
+          background-repeat: no-repeat;
+          min-height: 18px;
+        }
+        .time__title {
+          text-align: end;
+        }
+        .time__summ {
+          margin-top: 3px;
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 16px;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+  .topNfts__header {
+    margin-top: 47px;
+  }
+  .footer {
+    border: 1px solid #9b9da0;
+    border-radius: 12px;
+    margin-top: 24px;
+    hr {
+      border: none;
+      border-top: 1px solid #9b9da0;
+    }
+    &__header {
+      margin: 23px 61px 22px 29px;
+      display: flex;
+      justify-content: start;
+      flex-direction: row;
+      align-items: center;
+      .footerHeader__item {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 18px;
+        color: #d9d9d9;
+        &--collection {
+          margin-right: 226px;
+        }
+        &--volume {
+          margin-right: 122px;
+        }
+        &--percent {
+          margin-right: 86px;
+        }
+        &--owners {
+          margin-right: 93px;
+        }
+      }
+    }
+    .topNfts__items {
+      margin: 2px 24px 2px 32px;
+      .topNfts__item {
+        margin-top: 2px;
+        margin-bottom: 2px;
+        display: flex;
+        justify-content: start;
+        flex-direction: row;
+        border-radius: 12px;
+        padding: 12px 25px 7px 9px;
+        &:hover {
+          background: #1c1e2a;
+          box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.12);
+        }
+        .topNfts__collection {
+          display: flex;
+          .collection__description {
+            margin-top: 8px;
+            margin-left: 15px;
+            .description__label {
+              font-weight: 700;
+              font-size: 16px;
+              line-height: 18px;
+              color: #ffffff;
+            }
+            .description__autor {
+              font-weight: 400;
+              font-size: 12px;
+              line-height: 14px;
+              color: #9b9da0;
+            }
+          }
+        }
+        .collection__properties {
+          display: flex;
+          justify-content: start;
+          margin-left: 115px;
+          margin-top: 9px;
+          .properties__item {
+            box-sizing: border-box;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 16px;
+            color: #9b9da0;
+            padding-top: 2px;
+            &--volume {
+              padding-left: 20px;
+              background-image: url("../img/price_summ-icon.png");
+              background-repeat: no-repeat;
+              min-height: 18px;
+            }
+            &--percent {
+              padding-left: 15px;
+              margin-left: 97px;
+              color: #2ad97b;
+              background-image: url("../img/Arrow-up.svg");
+              background-repeat: no-repeat;
+            }
+
+            &--owners {
+              margin-left: 89px;
+            }
+            &--items {
+              margin-left: 126px;
+            }
+          }
+        }
+      }
+    }
   }
 }
 
+.hiddenSidebar__icon {
+  position: absolute;
+  right: 0;
+  top: 1000px;
+  height: 100px;
+  display: none;
+}
 .button {
   cursor: pointer;
   background: #ffffff;
@@ -338,5 +522,149 @@ body {
     background: #0997ff;
     color: #ffffff;
     border: #ffffff;
+  }
+}
+
+.hiddenSidebar {
+  margin-top: 262px;
+  background-color: #2e3140;
+  padding: 46px 43px 49px 39px;
+  width: fit-content;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: none;
+  &__header {
+    background: #1c1e2a;
+    border-radius: 12px;
+    padding: 31px 49px 28px 49px;
+  }
+  &__title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    color: #1b1a1e;
+  }
+  &__balance {
+    margin-top: 19px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 41px;
+    color: #ffffff;
+  }
+  &__offers {
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
+    .offers__item {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 24px;
+      &--total {
+        color: #c4c4c4;
+      }
+      &--summ {
+        margin-left: 20px;
+        color: #fcfcff;
+      }
+      &--percent {
+        margin-left: 6px;
+        color: #73c255;
+      }
+    }
+  }
+  &__tokenArea {
+    margin-top: 54px;
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
+    gap: 9px;
+    .token {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 24px;
+      color: #c4c4c4;
+      &__button {
+        img {
+          position: relative;
+          bottom: 5px;
+        }
+      }
+    }
+  }
+  &__topUpButton {
+    margin-top: 19px;
+    background: #0997ff;
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
+    align-items: center;
+    gap: 13px;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    padding: 19px 81px 22px 78px;
+    &:hover {
+      background-color: #ffffff;
+      color: #0997ff;
+    }
+  }
+  .topSalers {
+    margin-top: 31px;
+    &__header {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__items {
+      margin-top: 31px;
+      display: flex;
+      flex-direction: column;
+      gap: 25px
+    }
+    &__personality {
+      display: flex;
+    }
+    &__item {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      align-items: center;
+
+      .salers {
+        &__avatar {
+          width: 48px;
+          height: 48px;
+        }
+        &__info {
+          margin-left: 8px;
+        }
+        &__name {
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 21px;
+          color: #ffffff;
+        }
+        &__co {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 16px;
+          color: #9b9da0;
+        }
+        &__button {
+          background: #0997ff;
+          color: #ffffff;
+          padding: 16px 39px;
+          border: #0997ff 1px solid;
+          
+          &:hover {
+            color: #0997ff;
+            background-color: #1c1e2a;
+            border: #0997ff 1px solid;
+          }
+        }
+      }
+    }
   }
 }
