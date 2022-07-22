@@ -20,15 +20,19 @@ a {
 
 .container {
   background-color: #1c1e2a;
-  margin: 262px auto 248px auto;
+  margin: 20px auto;
   display: flex;
+  max-width: 1200px;
+  &:hover > .hiddenSidebar > .hiddenSidebar__icon {
+    display: block;
+  }
   .sidebar {
     box-sizing: border-box;
-    max-width: 380px;
+    width: 300px;
     border-right: #9b9da0 1px solid;
 
     &__header {
-      margin: 134px auto 0 81px;
+      margin: 134px auto 0 25px;
     }
     &__item {
       margin-top: 24px;
@@ -96,17 +100,17 @@ a {
 
     &__menu {
       margin-top: 154px;
-      margin-left: 81px;
+      margin-left: 25px;
     }
     &__resources {
       margin-top: 134px;
-      margin-left: 81px;
+      margin-left: 25px;
     }
     &__advertise {
-      margin: 240px 62px 58px 62px;
+      margin: 240px auto 58px auto;
       border-radius: 15px;
-      max-width: 267px;
-      min-width: 233px;
+      max-width: 230px;
+      min-width: 200px;
       max-height: 318px;
       min-height: 280px;
       background-image: url("../img/ad.jpg");
@@ -150,22 +154,20 @@ a {
   padding-left: 30px;
   padding-right: 30px;
   box-sizing: border-box;
+  max-width: 900px;
 
-  &:hover > .hiddenSidebar__icon {
-    display: block;
-  }
-
+ 
   .header {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
-    margin: 28px 121px 0px 121px;
+    margin: 28px 20px 0px 20px;
 
     &__search {
       border-radius: 12px;
-      min-width: 440px;
-      padding: 16px 86px 17px 23px;
+      min-width: 400px;
+      padding: 16px 20px 17px 23px;
       background-color: #2e3140;
 
       .header__input {
@@ -215,6 +217,10 @@ a {
       margin: 32px auto 39px 53px;
     }
     &__img {
+      max-width: 400px;
+      max-height: 265px;
+      position: relative;
+      bottom: -95px;
     }
     &__header {
       font-style: normal;
@@ -336,6 +342,12 @@ a {
       background: #262c3a;
       border-radius: 12px;
 
+      .card__img {
+        width: 235px;
+        height: 235px;
+        margin-bottom: 10px;
+      }
+
       .card__header {
         display: flex;
         justify-content: space-between;
@@ -417,21 +429,21 @@ a {
         line-height: 18px;
         color: #d9d9d9;
         &--collection {
-          margin-right: 226px;
+          margin-right: 205px;
         }
         &--volume {
-          margin-right: 122px;
+          margin-right: 104px;
         }
         &--percent {
-          margin-right: 86px;
+          margin-right: 81px;
         }
         &--owners {
-          margin-right: 93px;
+          margin-right: 97px;
         }
       }
     }
     .topNfts__items {
-      margin: 2px 24px 2px 32px;
+      margin: 2px 15px 2px 15px;
       .topNfts__item {
         margin-top: 2px;
         margin-bottom: 2px;
@@ -446,6 +458,10 @@ a {
         }
         .topNfts__collection {
           display: flex;
+          .topNfts__icon {
+            width: 48px;
+            height: 48px;
+          }
           .collection__description {
             margin-top: 8px;
             margin-left: 15px;
@@ -502,13 +518,6 @@ a {
   }
 }
 
-.hiddenSidebar__icon {
-  position: absolute;
-  right: 0;
-  top: 1000px;
-  height: 100px;
-  display: none;
-}
 .button {
   cursor: pointer;
   background: #ffffff;
@@ -526,15 +535,37 @@ a {
 }
 
 .hiddenSidebar {
-  margin-top: 262px;
-  background-color: #2e3140;
-  padding: 46px 43px 49px 39px;
-  width: fit-content;
-  z-index: 1;
-  position: absolute;
-  top: 0;
-  right: 0;
-  display: none;
+  display: flex;
+  justify-content: start;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  left: -40px;
+  
+  
+  &__icon {
+    left: -32px;
+    top: 50%;
+    height: 100px;
+    display: none;
+    
+  }
+
+  &__content {
+    transition: all 0.4s ease-in-out 0.5s;
+    margin-top: 20px;
+    background-color: #2e3140;
+    padding: 46px 43px 49px 39px;
+    width: fit-content;
+    z-index: 1;
+    display: block;
+    &.active {
+      // display:block;
+      transform: translateX(-500px);
+      transition: all 0.4s ease-in-out;
+    }
+  }
+
   &__header {
     background: #1c1e2a;
     border-radius: 12px;
@@ -621,7 +652,7 @@ a {
       margin-top: 31px;
       display: flex;
       flex-direction: column;
-      gap: 25px
+      gap: 25px;
     }
     &__personality {
       display: flex;
@@ -657,7 +688,7 @@ a {
           color: #ffffff;
           padding: 16px 39px;
           border: #0997ff 1px solid;
-          
+
           &:hover {
             color: #0997ff;
             background-color: #1c1e2a;
@@ -668,3 +699,5 @@ a {
     }
   }
 }
+
+
