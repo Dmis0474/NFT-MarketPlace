@@ -1,5 +1,5 @@
 function showMenu() {
-  document.querySelector(".hiddenSidebar__content").classList.toggle("active");
+  document.querySelector(".hiddenSidebar").classList.toggle("active");
   // showMenu()
 
 }

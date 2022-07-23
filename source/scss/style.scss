@@ -23,9 +23,6 @@ a {
   margin: 20px auto;
   display: flex;
   max-width: 1200px;
-  &:hover > .hiddenSidebar > .hiddenSidebar__icon {
-    display: block;
-  }
   .sidebar {
     box-sizing: border-box;
     width: 300px;
@@ -156,7 +153,6 @@ a {
   box-sizing: border-box;
   max-width: 900px;
 
- 
   .header {
     display: flex;
     justify-content: space-between;
@@ -539,16 +535,16 @@ a {
   justify-content: start;
   flex-direction: row;
   align-items: center;
-  position: relative;
-  left: -40px;
-  
-  
+  position: absolute;
+  right: 328px;
+  top: 20%;
+  height: 1123px;
+
   &__icon {
     left: -32px;
     top: 50%;
     height: 100px;
-    display: none;
-    
+    display: block;
   }
 
   &__content {
@@ -558,12 +554,7 @@ a {
     padding: 46px 43px 49px 39px;
     width: fit-content;
     z-index: 1;
-    display: block;
-    &.active {
-      // display:block;
-      transform: translateX(-500px);
-      transition: all 0.4s ease-in-out;
-    }
+    display: none;
   }
 
   &__header {
@@ -700,4 +691,11 @@ a {
   }
 }
 
-
+.active {
+  // display:block;
+  transform: translateX(0px);
+  transition: all 0.4s ease-in-out;
+  .hiddenSidebar__content {
+    display: block;
+  }
+}
