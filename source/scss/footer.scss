@@ -1,0 +1,118 @@
+$primary-text-color: #fff;
+$font-stack: "Poppins", sans-serif;
+$font-stack1: "Space Grotesk", sans-serif;
+
+.footer {
+    border: 1px solid #9b9da0;
+    border-radius: 12px;
+    margin-top: 24px;
+    hr {
+      border: none;
+      border-top: 1px solid #9b9da0;
+    }
+    &__header {
+      margin: 23px 61px 22px 29px;
+      display: flex;
+      justify-content: start;
+      flex-direction: row;
+      align-items: center;
+      .footerHeader__item {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 18px;
+        color: #d9d9d9;
+        font-family: $font-stack1;
+        &--collection {
+          margin-right: 205px;
+        }
+        &--volume {
+          margin-right: 104px;
+        }
+        &--percent {
+          margin-right: 81px;
+          min-width: 50px;
+        }
+        &--owners {
+          margin-right: 97px;
+        }
+      }
+    }
+    .topNfts__items {
+      margin: 2px 15px 2px 15px;
+      .topNfts__item {
+        margin-top: 2px;
+        margin-bottom: 2px;
+        display: flex;
+        justify-content: start;
+        flex-direction: row;
+        border-radius: 12px;
+        padding: 12px 25px 7px 9px;
+        &:hover {
+          background: #1c1e2a;
+          box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.12);
+        }
+        .topNfts__collection {
+          display: flex;
+          .topNfts__icon {
+            width: 48px;
+            height: 48px;
+          }
+          .collection__description {
+            margin-top: 8px;
+            margin-left: 15px;
+            .description__label {
+              font-weight: 700;
+              font-size: 16px;
+              line-height: 18px;
+              color: #ffffff;
+              width: max-content;
+              min-width: 135px;
+              font-family: $font-stack1;
+            }
+            .description__author {
+              font-weight: 400;
+              font-size: 12px;
+              line-height: 14px;
+              color: #9b9da0;
+            }
+          }
+        }
+        .collection__properties {
+          display: flex;
+          justify-content: start;
+          margin-left: 74px;
+          margin-top: 9px;
+          .properties__item {
+            box-sizing: border-box;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 16px;
+            color: #9b9da0;
+            padding-top: 2px;
+            &--volume {
+              padding-left: 20px;
+              background-image: url("../img/price_summ-icon.png");
+              background-repeat: no-repeat;
+              min-height: 18px;
+              min-width: fit-content;
+            }
+            &--percent {
+              padding-left: 15px;
+              margin-left: 84px;
+              color: #2ad97b;
+              background-image: url("../img/Arrow-up.svg");
+              background-repeat: no-repeat;
+              min-width: 40px;
+            }
+
+            &--owners {
+              margin-left: 110px;
+            }
+            &--items {
+              margin-left: 118px;
+            }
+          }
+        }
+      }
+    }
+  }

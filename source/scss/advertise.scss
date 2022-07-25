@@ -1,0 +1,49 @@
+$primary-text-color: #fff;
+$font-stack: "Poppins", sans-serif;
+$font-stack1: "Space Grotesk", sans-serif;
+
+.advertise {
+    background-image: url("../img/qwer__background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 46px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 12px;
+    &__items {
+      margin: 32px auto 39px 53px;
+    }
+    &__img {
+      max-width: 400px;
+      max-height: 265px;
+      position: relative;
+      bottom: -95px;
+    }
+    &__header {
+      font-family: $font-stack1;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 55px;
+      color: #fff9f9;
+      max-width: 468px;
+      
+    }
+    &__description {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 27px;
+      color: #ffffff;
+      margin-top: 11px;
+    }
+    &__buttons {
+      display: flex;
+      justify-content: start;
+      gap: 16px;
+      margin-top: 26px;
+      .advertise__button {
+        width: 193px;
+        height: 60px;
+      }
+    }
+  }

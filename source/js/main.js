@@ -4,17 +4,6 @@ function showMenu() {
 
 }
 
-// function showMenu() {
-//   $(".hiddenSidebar__content").css('display','block');
-//   $(".hiddenSidebar").css('transform', 'translateX(-500px)');
-//   $(".hiddenSidebar").css('transition', 'all 0.4s ease-in-out');
-// }
-
-// function hideMenu() {
-//   $(".hiddenSidebar").css('transform', 'translateX(500px)');
-//   $(".hiddenSidebar").css('transition', 'all 0.4s ease-in-out');
-//   $(".hiddenSidebar__content").css('display','none');
-// }
 
 $(document).ready(function () {
   $(".itemsList").slick({

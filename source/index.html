@@ -9,14 +9,20 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,500;0,600;0,700;1,100&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <title>NFT MarketPlace</title>
 
     <!-- inject:css -->
-    <link rel="stylesheet" href="/css/fonts.css" />
-    <link rel="stylesheet" href="/css/reset.css" />
-    <link rel="stylesheet" href="/css/slick-theme.css" />
-    <link rel="stylesheet" href="/css/slick.css" />
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/slick-theme.css">
+    <link rel="stylesheet" href="/css/slick.css">
     <!-- endinject -->
   </head>
 
@@ -64,7 +70,7 @@
             />
           </div>
 
-          <div class="header__registr">
+          <div class="header__registration">
             <img
               src="img/Notification.svg"
               alt=""
@@ -322,7 +328,7 @@
                 <img src="img/topNft__icon1.png" alt="" class="topNfts__icon" />
                 <div class="collection__description">
                   <h5 class="description__label">Cool Cyber Apes</h5>
-                  <p class="description__autor">@cybasseman</p>
+                  <p class="description__author">@cybasseman</p>
                 </div>
               </div>
               <ul class="collection__properties">
@@ -338,8 +344,8 @@
               <div class="topNfts__collection">
                 <img src="img/topNft__icon2.png" alt="" class="topNfts__icon" />
                 <div class="collection__description">
-                  <h5 class="description__label">Cool Cyber Apes</h5>
-                  <p class="description__autor">@cybasseman</p>
+                  <h5 class="description__label">Shadow Cube</h5>
+                  <p class="description__author">@cubicglass</p>
                 </div>
               </div>
               <ul class="collection__properties">
@@ -355,8 +361,8 @@
               <div class="topNfts__collection">
                 <img src="img/topNft__icon3.png" alt="" class="topNfts__icon" />
                 <div class="collection__description">
-                  <h5 class="description__label">Cool Cyber Apes</h5>
-                  <p class="description__autor">@cybasseman</p>
+                  <h5 class="description__label">Satoshi Mori</h5>
+                  <p class="description__author">@whoissatoshi</p>
                 </div>
               </div>
               <ul class="collection__properties">
@@ -372,8 +378,8 @@
               <div class="topNfts__collection">
                 <img src="img/topNft__icon4.png" alt="" class="topNfts__icon" />
                 <div class="collection__description">
-                  <h5 class="description__label">Cool Cyber Apes</h5>
-                  <p class="description__autor">@cybasseman</p>
+                  <h5 class="description__label">The Scars</h5>
+                  <p class="description__author">@Euphorian</p>
                 </div>
               </div>
               <ul class="collection__properties">
@@ -414,71 +420,95 @@
                 <p>TopUp Balance</p>
               </button>
             </div>
-            <div class="hiddenSidebar__header topSalers">
-              <div class="topSalers__header">
-                <h3 class="topSalers__label">Top Sellers</h3>
-                <a href="#" class="allNfts__link topSalers__link">See all</a>
+            <div class="hiddenSidebar__header topSellers">
+              <div class="topSellers__header">
+                <h3 class="topSellers__label">Top Sellers</h3>
+                <a href="#" class="allNfts__link topSellers__link">See all</a>
               </div>
-              <ul class="topSalers__items">
-                <li class="topSalers__item">
-                  <div class="topSalers__personality">
-                    <img src="img/salers1.png" alt="" class="salers__avatar" />
-                    <div class="salers__info">
-                      <p class="salers__name">Sam Lee</p>
-                      <p class="salers__co">@samlee</p>
+              <ul class="topSellers__items">
+                <li class="topSellers__item">
+                  <div class="topSellers__personality">
+                    <img
+                      src="img/sellers1.png"
+                      alt=""
+                      class="sellers__avatar"
+                    />
+                    <div class="sellers__info">
+                      <p class="sellers__name">Sam Lee</p>
+                      <p class="sellers__co">@samlee</p>
                     </div>
                   </div>
-                  <button class="button salers__button">Follow</button>
+                  <button class="button sellers__button">Follow</button>
                 </li>
-                <li class="topSalers__item">
-                  <div class="topSalers__personality">
-                    <img src="img/salers2.png" alt="" class="salers__avatar" />
-                    <div class="salers__info">
-                      <p class="salers__name">Jane Donald</p>
-                      <p class="salers__co">@janedoe</p>
+                <li class="topSellers__item">
+                  <div class="topSellers__personality">
+                    <img
+                      src="img/sellers2.png"
+                      alt=""
+                      class="sellers__avatar"
+                    />
+                    <div class="sellers__info">
+                      <p class="sellers__name">Jane Donald</p>
+                      <p class="sellers__co">@janedoe</p>
                     </div>
                   </div>
-                  <button class="button salers__button">Follow</button>
+                  <button class="button sellers__button">Follow</button>
                 </li>
-                <li class="topSalers__item">
-                  <div class="topSalers__personality">
-                    <img src="img/salers3.png" alt="" class="salers__avatar" />
-                    <div class="salers__info">
-                      <p class="salers__name">Lois Lane</p>
-                      <p class="salers__co">@supermanschic</p>
+                <li class="topSellers__item">
+                  <div class="topSellers__personality">
+                    <img
+                      src="img/sellers3.png"
+                      alt=""
+                      class="sellers__avatar"
+                    />
+                    <div class="sellers__info">
+                      <p class="sellers__name">Lois Lane</p>
+                      <p class="sellers__co">@supermanschic</p>
                     </div>
                   </div>
-                  <button class="button salers__button">Follow</button>
+                  <button class="button sellers__button">Follow</button>
                 </li>
-                <li class="topSalers__item">
-                  <div class="topSalers__personality">
-                    <img src="img/salers4.png" alt="" class="salers__avatar" />
-                    <div class="salers__info">
-                      <p class="salers__name">Barry Allen</p>
-                      <p class="salers__co">@Flash</p>
+                <li class="topSellers__item">
+                  <div class="topSellers__personality">
+                    <img
+                      src="img/sellers4.png"
+                      alt=""
+                      class="sellers__avatar"
+                    />
+                    <div class="sellers__info">
+                      <p class="sellers__name">Barry Allen</p>
+                      <p class="sellers__co">@Flash</p>
                     </div>
                   </div>
-                  <button class="button salers__button">Follow</button>
+                  <button class="button sellers__button">Follow</button>
                 </li>
-                <li class="topSalers__item">
-                  <div class="topSalers__personality">
-                    <img src="img/salers5.png" alt="" class="salers__avatar" />
-                    <div class="salers__info">
-                      <p class="salers__name">Jenner Foster</p>
-                      <p class="salers__co">@jennerfos</p>
+                <li class="topSellers__item">
+                  <div class="topSellers__personality">
+                    <img
+                      src="img/sellers5.png"
+                      alt=""
+                      class="sellers__avatar"
+                    />
+                    <div class="sellers__info">
+                      <p class="sellers__name">Jenner Foster</p>
+                      <p class="sellers__co">@jennerfos</p>
                     </div>
                   </div>
-                  <button class="button salers__button">Follow</button>
+                  <button class="button sellers__button">Follow</button>
                 </li>
-                <li class="topSalers__item">
-                  <div class="topSalers__personality">
-                    <img src="img/salers1.png" alt="" class="salers__avatar" />
-                    <div class="salers__info">
-                      <p class="salers__name">Sam Lee</p>
-                      <p class="salers__co">@samlee</p>
+                <li class="topSellers__item">
+                  <div class="topSellers__personality">
+                    <img
+                      src="img/sellers1.png"
+                      alt=""
+                      class="sellers__avatar"
+                    />
+                    <div class="sellers__info">
+                      <p class="sellers__name">Sam Lee</p>
+                      <p class="sellers__co">@samlee</p>
                     </div>
                   </div>
-                  <button class="button salers__button">Follow</button>
+                  <button class="button sellers__button">Follow</button>
                 </li>
               </ul>
             </div>

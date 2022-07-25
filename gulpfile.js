@@ -43,7 +43,7 @@ gulp.task("vendor-scripts", () =>
 
 gulp.task("sass", () =>
   gulp
-    .src("source/scss/**/*.scss")
+    .src("source/scss/index.scss")
     .pipe(scss({ outputStyle: "compressed" }))
     .pipe(
       autoprefixer(["last 15 versions", "> 1%", "ie 8", "ie 7", "ie 6"], {
