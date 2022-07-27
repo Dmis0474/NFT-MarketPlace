@@ -94,8 +94,7 @@
       border-radius: 12px;
 
       .card__img {
-        width: 235px;
-        height: 235px;
+        max-width: -webkit-fill-available;
         margin-bottom: 10px;
       }
 

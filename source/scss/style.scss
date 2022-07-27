@@ -10,6 +10,7 @@
 
 
 body {
+  overflow-x: hidden;
   font-family: $font-stack;
   color: $primary-text-color;
   font-size: 18px;
@@ -17,7 +18,7 @@ body {
   font-weight: 400;
   // overflow-x: hidden;
   // overflow-y: hidden;
-  background-color: #1c1e2a;
+  // background-color: #1c1e2a;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -30,6 +31,7 @@ a {
   background-color: #1c1e2a;
   margin: 20px auto;
   display: flex;
+  justify-content: start;
   max-width: 1200px;
 }
 

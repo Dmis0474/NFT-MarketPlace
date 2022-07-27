@@ -7,7 +7,6 @@
 
     &__search {
       border-radius: 12px;
-      min-width: 400px;
       padding: 16px 20px 17px 23px;
       background-color: #2e3140;
 
@@ -42,6 +41,11 @@
         background-image: url("../img/regist_arrow.svg");
         background-repeat: no-repeat;
         background-position: right;
+        background-size: 14px;
+      }
+      .registration__notifications {
+        width: 24px;
+        height: 24px;
       }
     }
   }

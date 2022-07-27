@@ -1,7 +1,7 @@
 
 .sidebar {
     box-sizing: border-box;
-    width: 300px;
+    max-width: 300px;
     border-right: #9b9da0 1px solid;
 
     &__header {
@@ -81,12 +81,8 @@
       margin-left: 25px;
     }
     &__advertise {
-      margin: 240px auto 58px auto;
+      margin: 240px 10px 58px 10px;
       border-radius: 15px;
-      max-width: 230px;
-      min-width: 200px;
-      max-height: 318px;
-      min-height: 280px;
       background-image: url("../img/ad.jpg");
       .advertise__header {
         font-family: $font-stack1;
