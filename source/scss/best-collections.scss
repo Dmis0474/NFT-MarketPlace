@@ -1,0 +1,182 @@
+.best-collections {
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+  }
+  &__items {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 22px;
+    .best-collections__label {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 27px;
+      color: #ffffff;
+      font-family: "Space Grotesk", sans-serif;
+    }
+    .best-collections__item {
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 22px;
+      color: #d9d9d9;
+    }
+    
+  }
+}
+.table__block {
+  margin-top: 20px;
+  border-radius: 12px;
+  border: 1px solid #9b9da0;
+}
+table {
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: -webkit-fill-available;
+  table-layout: fixed;
+}
+
+table caption {
+  margin-bottom: 22px;
+}
+
+thead {
+  padding: 0.35em;
+  border-bottom: 1px solid #9b9da0;
+}
+
+table tr {
+  padding: 0.35em;
+  .header__item {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    color: #d9d9d9;
+    font-family: "Space Grotesk", sans-serif;
+    text-transform: capitalize;
+  }
+}
+
+table th,
+table td {
+  padding: 0.625em;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+
+  .best-collections {
+    display: flex;
+    .collection__description {
+      margin-top: 8px;
+      margin-left: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      .description__label {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 18px;
+        color: #ffffff;
+        font-family: "Space Grotesk", sans-serif;
+      }
+      .description__author {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        color: #9b9da0;
+      }
+    }
+    .table__icon {
+      width: 48px;
+      height: 48px;
+    }
+  }
+  .properties__item {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 114%;
+    color: #9b9da0;
+    font-family: $font-stack;
+    &--volume {
+      padding-left: 20px;
+      background-image: url(../img/price_summ-icon.png);
+      background-repeat: no-repeat;
+      min-height: 18px;
+      min-width: -webkit-fit-content;
+      min-width: -moz-fit-content;
+      min-width: fit-content;
+    }
+    &--percent {
+      color: #2ad97b;
+    }
+  }
+}
+
+table th {
+  font-size: 0.85em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px) {
+  table {
+    border: 0;
+  }
+
+  table caption {
+    font-size: 1.3em;
+  }
+
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: 0.625em;
+  }
+
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: 0.8em;
+    text-align: right;
+  }
+
+  table td::before {
+    /*
+      * aria-label has no advantage, it won't be read inside a table
+      content: attr(aria-label);
+      */
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  table td:last-child {
+    border-bottom: 0;
+  }
+}
+
+
+@media screen and(max-width:768px) {
+    table td {
+        .properties__item--volume {
+            background-image: none;
+        }
+        
+    }
+    
+}

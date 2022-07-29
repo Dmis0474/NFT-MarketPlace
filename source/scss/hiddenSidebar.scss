@@ -1,93 +1,218 @@
-
-
 .hiddenSidebar {
+  display: flex;
+  justify-content: start;
+  flex-direction: row;
+  align-items: center;
+  position: absolute;
+  right: 0px;
+  top: 20%;
+  height: 1123px;
+  z-index: 1;
+
+  &__icon {
+    left: -32px;
+    top: 50%;
+    height: 65px;
+    display: block;
+  }
+  &__icon--return {
+    display: none;
+    height: 65px;
+  }
+
+  &__content {
+    transition: all 0.4s ease-in-out 0.5s;
+    margin-top: 20px;
+    background-color: #2e3140;
+    padding: 46px 43px 49px 39px;
+    width: fit-content;
+    z-index: 1;
+    display: none;
+  }
+
+  &__header {
+    background: #1c1e2a;
+    border-radius: 12px;
+    padding: 31px 49px 28px 49px;
+  }
+  &__title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    color: #1b1a1e;
+  }
+  &__balance {
+    margin-top: 19px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 41px;
+    color: #ffffff;
+    font-family: $font-stack1;
+  }
+  &__offers {
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
+    .offers__item {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 24px;
+      &--total {
+        color: #c4c4c4;
+      }
+      &--summa {
+        margin-left: 20px;
+        color: #fcfcff;
+      }
+      &--percent {
+        margin-left: 6px;
+        color: #73c255;
+      }
+    }
+  }
+  &__tokenArea {
+    margin-top: 54px;
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
+    gap: 9px;
+    .token {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 24px;
+      color: #c4c4c4;
+      &__button {
+        img {
+          position: relative;
+          bottom: 5px;
+        }
+      }
+    }
+  }
+  &__topUpButton {
+    margin-top: 19px;
+    background: #0997ff;
     display: flex;
     justify-content: start;
     flex-direction: row;
     align-items: center;
-    position: absolute;
-    right: 0px;
-    top: 20%;
-    height: 1123px;
-  
-    &__icon {
-      left: -32px;
-      top: 50%;
-      height: 65px;
-      display: block;
+    gap: 13px;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    padding: 19px 81px 22px 78px;
+    &:hover {
+      background-color: #ffffff;
+      color: #0997ff;
     }
-  
-    &__content {
-      transition: all 0.4s ease-in-out 0.5s;
-      margin-top: 20px;
-      background-color: #2e3140;
-      padding: 46px 43px 49px 39px;
-      width: fit-content;
-      z-index: 1;
-      display: none;
-    }
-  
+  }
+  .topSellers {
+    margin-top: 31px;
     &__header {
-      background: #1c1e2a;
-      border-radius: 12px;
-      padding: 31px 49px 28px 49px;
-    }
-    &__title {
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 18px;
-      color: #1b1a1e;
-    }
-    &__balance {
-      margin-top: 19px;
-      font-weight: 700;
-      font-size: 36px;
-      line-height: 41px;
-      color: #ffffff;
-      font-family: $font-stack1;
-    }
-    &__offers {
       display: flex;
-      justify-content: start;
+      justify-content: space-between;
+    }
+    &__items {
+      margin-top: 31px;
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+    }
+    &__personality {
+      display: flex;
+    }
+    &__item {
+      display: flex;
+      justify-content: space-between;
       flex-direction: row;
-      .offers__item {
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 24px;
-        &--total {
-          color: #c4c4c4;
+      align-items: center;
+
+      .sellers {
+        &__avatar {
+          width: 48px;
+          height: 48px;
         }
-        &--summa {
-          margin-left: 20px;
-          color: #fcfcff;
+        &__info {
+          margin-left: 8px;
         }
-        &--percent {
-          margin-left: 6px;
-          color: #73c255;
+        &__name {
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 21px;
+          color: #ffffff;
+        }
+        &__co {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 16px;
+          color: #9b9da0;
+        }
+        &__button {
+          background: #0997ff;
+          color: #ffffff;
+          padding: 16px 39px;
+          border: #0997ff 1px solid;
+
+          &:hover {
+            color: #0997ff;
+            background-color: #1c1e2a;
+            border: #0997ff 1px solid;
+          }
         }
       }
     }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hiddenSidebar {
+    max-width: 285px;
+    &__icon {
+      height: 35px;
+    }
+    &__icon--return {
+      height: 35px;
+    }
+    &__content {
+      margin-top: 15px;
+      padding: 15px 15px;
+    }
+    &__header {
+      border-radius: 6px;
+      padding: 15px 25px;
+    }
+    &__balance {
+      margin-top: 15px;
+      margin-bottom: 15px;
+      font-size: 24px;
+      line-height: 30px;
+    }
+    .offers__item {
+      font-size: 10px;
+      line-height: 16px;
+    }
     &__tokenArea {
-      margin-top: 54px;
-      display: flex;
-      justify-content: start;
-      flex-direction: row;
-      gap: 9px;
+      margin-top: 15px;
+      font-size: 10px;
+      line-height: 16px;
+      max-width: 200px;
       .token {
         font-weight: 500;
-        font-size: 14px;
-        line-height: 24px;
+        font-size: 9px;
+        line-height: 16px;
         color: #c4c4c4;
         &__button {
           img {
             position: relative;
-            bottom: 5px;
+            top: 0;
+            width: 10px;
           }
         }
       }
     }
     &__topUpButton {
-      margin-top: 19px;
+      margin-top: 10px;
       background: #0997ff;
       display: flex;
       justify-content: start;
@@ -96,68 +221,42 @@
       gap: 13px;
       color: #ffffff;
       font-weight: 500;
-      font-size: 20px;
-      line-height: 26px;
-      padding: 19px 81px 22px 78px;
+      font-size: 14px;
+      line-height: 20px;
+      padding: 19px 20px 22px 20px;
       &:hover {
         background-color: #ffffff;
         color: #0997ff;
       }
     }
-    .topSellers {
-      margin-top: 31px;
-      &__header {
-        display: flex;
-        justify-content: space-between;
+  }
+
+  .topSellers {
+    margin-top: 15px;
+    &__items {
+      gap: 5px;
+      display: block;
+      align-items: center;
+      flex-direction: column !important;
+    }
+    &__item {
+      display: block !important;
+    }
+
+    .sellers {
+      &__name {
+        font-size: 14px !important;
+        line-height: 18px !important;
       }
-      &__items {
-        margin-top: 31px;
-        display: flex;
-        flex-direction: column;
-        gap: 25px;
+      &__co {
+        font-size: 10px;
+        line-height: 13px;
       }
-      &__personality {
-        display: flex;
-      }
-      &__item {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: row;
-        align-items: center;
-  
-        .sellers {
-          &__avatar {
-            width: 48px;
-            height: 48px;
-          }
-          &__info {
-            margin-left: 8px;
-          }
-          &__name {
-            font-weight: 700;
-            font-size: 18px;
-            line-height: 21px;
-            color: #ffffff;
-          }
-          &__co {
-            font-weight: 400;
-            font-size: 14px;
-            line-height: 16px;
-            color: #9b9da0;
-          }
-          &__button {
-            background: #0997ff;
-            color: #ffffff;
-            padding: 16px 39px;
-            border: #0997ff 1px solid;
-  
-            &:hover {
-              color: #0997ff;
-              background-color: #1c1e2a;
-              border: #0997ff 1px solid;
-            }
-          }
-        }
+
+      &__button {
+        width: 170px;
+        margin-top: 10px;
       }
     }
   }
+}

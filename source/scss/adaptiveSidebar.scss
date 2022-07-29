@@ -1,0 +1,99 @@
+
+
+.adaptiveSidebar {
+    display: none;
+    justify-content: start;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    width: 25px;
+    z-index: 1;
+    background: #1C1E2A;
+  
+    &__header {
+      margin: 134px auto 0 5px;
+    }
+    &__item {
+      margin-top: 24px;
+      padding-left: 57px;
+      background-position: left;
+      background-repeat: no-repeat;
+      cursor: pointer;
+      background-size: 15px;
+      a {
+        text-decoration: none;
+        opacity: 0;
+        color: #D9D9D9;
+      }
+      &:hover > a {
+        color: #0997ff;
+      }
+      &--dashboard {
+        background-image: url(../img/dashboard.svg);
+        &:hover {
+          background-image: url(../img/dashboard-BLUE.svg);
+        }
+      }
+  
+      &--marketplace {
+        background-image: url(../img/marketplace.svg);
+        &:hover {
+          background-image: url(../img/marketplace-BLUE.svg);
+        }
+      }
+      &--messages {
+        background-image: url(../img/Message.svg);
+        &:hover {
+          background-image: url(../img/Message-BLUE.svg);
+        }
+      }
+      &--myCollection {
+        background-image: url(../img/myCollections.svg);
+        &:hover {
+          background-image: url(../img/myCollections-BLUE.svg);
+        }
+      }
+      &--wallet {
+        background-image: url(../img/Wallet.svg);
+        &:hover {
+          background-image: url(../img/Wallet-BLUE.svg);
+        }
+      }
+      &--history {
+        background-image: url(../img/History.svg);
+        &:hover {
+          background-image: url(../img/History-BLUE.svg);
+        }
+      }
+      &--settings {
+        background-image: url(../img/Setting.svg);
+        &:hover {
+          background-image: url(../img/Setting-BLUE.svg);
+        }
+      }
+      &--Resources {
+        background-image: url(../img/resources.svg);
+        &:hover {
+          background-image: url(../img/resources-BLUE.svg);
+        }
+      }
+    }
+  
+    &__menu {
+      margin-top: 154px;
+      margin-left: 5px;
+    }
+    &__resources {
+      margin-top: 134px;
+      margin-left: 5px;
+    }
+  }
+
+@media screen and (max-width:768px) {
+  .adaptiveSidebar {
+    display: block;
+  }
+}

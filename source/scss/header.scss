@@ -49,3 +49,30 @@
       }
     }
   }
+
+  @media screen and(max-width: 768px) {
+    .header__search{
+      max-width: 200px;
+      .header__input {
+        width: 50%;
+        
+      }
+    }
+    
+    .header__registration {
+      max-width: 150px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      .registration__enter {
+        text-decoration: none;
+        font-size: 10px;
+        line-height: 14px;
+        padding-right: 15px;
+        background-size: 9px;
+        margin-left: auto;
+        margin-right: 0;
+
+      }
+    }
+    
+  }
