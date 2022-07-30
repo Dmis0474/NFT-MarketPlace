@@ -64,22 +64,47 @@ a {
 
 .active {
   // display:block;
-  transform: translateX(0px);
-  transition: all 0.4s ease-in-out;
   .hiddenSidebar__content {
     display: block;
   }
   .hiddenSidebar__icon {
     display: none;
   }
-  .hiddenSidebar__icon--return{
-    display:block
+  .hiddenSidebar__icon--return {
+    display: block;
   }
 }
-.visible  {
+.visible {
   width: 200px;
   a {
+    transition: all 0.4s ease-in-out 0.9s;
     text-decoration: none;
     opacity: 1;
+  }
+}
+
+.sidebarMove {
+  transition: all 0.4s ease-in-out 0.5s;
+  min-width: 200px;
+  display: block;
+  .sidebar__item {
+    a {
+      opacity: 1;
+      transition: all 0.4s ease-in-out 0.7s;
+    }
+  }
+  .sidebar__advertise {
+    display: block;
+    transition: all 0.4s ease-in-out 0.8s;
+    
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .sidebar {
+    display: none;
+  }
+  .mainArea {
+    padding-left: 60px;
   }
 }

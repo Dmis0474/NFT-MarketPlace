@@ -1,10 +1,11 @@
 function showMenu() {
   document.querySelector(".hiddenSidebar").classList.toggle("active");
-  // showMenu()
 }
 function showRightSidebar() {
   document.querySelector(".adaptiveSidebar").classList.toggle("visible");
-  // showMenu()
+}
+function moveSidebar() {
+  document.querySelector(".sidebar").classList.toggle("sidebarMove");
 }
 
 
@@ -26,15 +27,15 @@ $(document).ready(function () {
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
+          slidesToShow: 2,
+          slidesToScroll: 2,
         },
       },
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
+          slidesToShow: 1,
+          slidesToScroll: 1,
         },
       },
       // You can unslick at a given breakpoint now by adding:

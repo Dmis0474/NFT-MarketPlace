@@ -10,7 +10,7 @@
   }
   &__item {
     margin-top: 24px;
-    padding-left: 57px;
+    padding-left: 35px;
     background-position: left;
     background-repeat: no-repeat;
     cursor: pointer;
@@ -122,6 +122,22 @@
 
 @media screen and(max-width: 768px) {
   .sidebar {
-    display: none;
+    min-width: 60px;
+    &__item {
+      a {
+        opacity: 0;
+      }
+      
+    }
+    &__advertise {
+      display: none;
+    }
+  }
+}
+
+
+@media screen and (max-width: 576px) {
+  .sidebar {
+    display: none ;
   }
 }
