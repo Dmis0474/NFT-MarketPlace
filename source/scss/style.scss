@@ -16,7 +16,7 @@ body {
   font-weight: 400;
   // overflow-x: hidden;
   // overflow-y: hidden;
-  // background-color: #1c1e2a;
+  background-color: #1c1e2a;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -64,13 +64,15 @@ a {
 
 .active {
   // display:block;
+  transform: translateX(-500px);
   .hiddenSidebar__content {
-    display: block;
+    visibility: visible;
+    opacity: 1;
   }
-  .hiddenSidebar__icon {
+  .hiddenSidebar__toggle-btn {
     display: none;
   }
-  .hiddenSidebar__icon--return {
+  .hiddenSidebar__toggle-btn—close {
     display: block;
   }
 }
@@ -96,7 +98,6 @@ a {
   .sidebar__advertise {
     display: block;
     transition: all 0.4s ease-in-out 0.8s;
-    
   }
 }
 

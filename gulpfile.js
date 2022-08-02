@@ -7,6 +7,7 @@ const imagemin = require("gulp-imagemin");
 const browserSync = require("browser-sync");
 const pngquant = require("imagemin-pngquant");
 const inject = require("gulp-inject");
+const sourcemap = require("source-map");
 
 const concat = require("gulp-concat");
 const rename = require("gulp-rename");
@@ -100,6 +101,20 @@ gulp.task("browser-sync", () => {
 });
 
 gulp.task("clear", (callback) => cache.clearAll());
+
+gulp.task("sass", () =>
+  gulp
+    .src("source/scss/style.scss")
+    .pipe(scss({ outputStyle: "compressed" }))
+    .pipe(
+      autoprefixer(["last 15 versions", "> 1%", "ie 8", "ie 7", "ie 6"], {
+        cascade: true,
+      })
+    )
+    .pipe(browserSync.reload({ stream: true }))
+    .pipe(gulp.dest("public/css"))
+);
+
 
 gulp.task(
   "watch",
