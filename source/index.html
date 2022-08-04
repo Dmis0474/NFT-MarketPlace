@@ -2,7 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <meta
+      name="viewport"
+      content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,24 +21,24 @@
     <title>NFT MarketPlace</title>
 
     <!-- inject:css -->
-    
+
     <link rel="stylesheet" href="/css/fonts.css">
-    
+
     <link rel="stylesheet" href="/css/reset.css">
-    
+
     <link rel="stylesheet" href="/css/slick-theme.css">
-    
+
     <link rel="stylesheet" href="/css/slick.css">
-    
+
     <link rel="stylesheet" href="/css/style.css">
-    
+
     <!-- endinject -->
   </head>
 
   <body>
     <!-- <img src="img/background.png" alt="" class="background__img" /> -->
     <div class="container">
-      <div class="sidebar" onclick="moveSidebar()">
+      <div class="sidebar" onclick="toggleSidebar()">
         <ul class="sidebar__header">
           <li class="sidebar__item sidebar__item--dashboard">
             <a href="#">Dashboard</a>
@@ -53,7 +56,7 @@
           <li class="sidebar__item sidebar__item--history"><a>History</a></li>
           <li class="sidebar__item sidebar__item--settings"><a>Settings</a></li>
         </ul>
-        <div class="sidebar__resources sidebar__item sidebar__item--Resources">
+        <div class="sidebar__item sidebar__item--Resources">
           <a href="#">Resources</a>
         </div>
         <div class="sidebar__advertise">
@@ -304,22 +307,23 @@
             </div>
           </div>
         </div>
-        
+
         <div class="best-collections">
           <div class="best-collections__header">
             <div class="best-collections__items">
               <h3 class="best-collections__label">Top NFTS</h3>
               <p class="best-collections__item">564 Creators</p>
             </div>
-            <a href="#" class="best-collections __link">See all</a>
+            <a href="#" class="best-collections__link">See all</a>
           </div>
           <div class="table-block">
             <table>
-              <caption>
-              </caption>
+              <caption></caption>
               <thead>
                 <tr>
-                  <th scope="col" class="header__item header__item--collection">Collection</th>
+                  <th scope="col" class="header__item header__item--collection">
+                    Collection
+                  </th>
                   <th scope="col" class="header__item">Volume</th>
                   <th scope="col" class="header__item">24h %</th>
                   <th scope="col" class="header__item">Owners</th>
@@ -330,70 +334,149 @@
                 <tr>
                   <td>
                     <div class="best-collections">
-                      <img src="img/topNft__icon2.png" alt="" class="table__icon" />
+                      <img
+                        src="img/topNft__icon2.png"
+                        alt=""
+                        class="table__icon"
+                      />
                       <div class="collection__description">
                         <h5 class="description__label">Shadow Cube</h5>
                         <p class="description__author">@cubicglass</p>
                       </div>
                     </div>
                   </td>
-                  <td data-label="Due Date"><p class="properties__item properties__item--volume">0.24 BTC</p></td>
-                  <td data-label="Amount"><p class="properties__item properties__item--percent">-15%</p></td>
-                  <td data-label="Period"><p class="properties__item properties__item--owners"> 5.5k</p></td>
-                  <td data-label="Period"><p class="properties__item properties__item--items">12.5k</p></td>
+                  <td data-label="Due Date">
+                    <p class="properties__item properties__item--volume">
+                      0.24 BTC
+                    </p>
+                  </td>
+                  <td data-label="Amount">
+                    <p class="properties__item properties__item--percent">
+                      -15%
+                    </p>
+                  </td>
+                  <td data-label="Period">
+                    <p class="properties__item properties__item--owners">
+                      5.5k
+                    </p>
+                  </td>
+                  <td data-label="Period">
+                    <p class="properties__item properties__item--items">
+                      12.5k
+                    </p>
+                  </td>
                 </tr>
                 <tr>
                   <td scope="row">
                     <div class="best-collections">
-                      <img src="img/topNft__icon3.png" alt="" class="table__icon" />
+                      <img
+                        src="img/topNft__icon3.png"
+                        alt=""
+                        class="table__icon"
+                      />
                       <div class="collection__description">
                         <h5 class="description__label">Satoshi Mori</h5>
                         <p class="description__author">@whoissatoshi</p>
                       </div>
                     </div>
                   </td>
-                  <td data-label="Due Date"><p class="properties__item properties__item--volume">0.24 BTC</p></td>
-                  <td data-label="Amount"><p class="properties__item properties__item--percent">+25%</p></td>
-                  <td data-label="Period"><p class="properties__item properties__item--owners"> 5.5k</p></td>
-                  <td data-label="Period"><p class="properties__item properties__item--items">12.5k</p></td>
+                  <td data-label="Due Date">
+                    <p class="properties__item properties__item--volume">
+                      0.24 BTC
+                    </p>
+                  </td>
+                  <td data-label="Amount">
+                    <p class="properties__item properties__item--percent">
+                      +25%
+                    </p>
+                  </td>
+                  <td data-label="Period">
+                    <p class="properties__item properties__item--owners">
+                      5.5k
+                    </p>
+                  </td>
+                  <td data-label="Period">
+                    <p class="properties__item properties__item--items">
+                      12.5k
+                    </p>
+                  </td>
                 </tr>
                 <tr>
                   <td scope="row">
                     <div class="best-collections">
-                      <img src="img/topNft__icon4.png" alt="" class="table__icon" />
+                      <img
+                        src="img/topNft__icon4.png"
+                        alt=""
+                        class="table__icon"
+                      />
                       <div class="collection__description">
                         <h5 class="description__label">The Scars</h5>
                         <p class="description__author">@Euphorian</p>
                       </div>
                     </div>
                   </td>
-                  <td data-label="Due Date"><p class="properties__item properties__item--volume">0.24 BTC</p></td>
-                  <td data-label="Amount"><p class="properties__item properties__item--percent">-11%</p></td>
-                  <td data-label="Period"><p class="properties__item properties__item--owners"> 5.5k</p></td>
-                  <td data-label="Period"><p class="properties__item properties__item--items">12.5k</p></td>
+                  <td data-label="Due Date">
+                    <p class="properties__item properties__item--volume">
+                      0.24 BTC
+                    </p>
+                  </td>
+                  <td data-label="Amount">
+                    <p class="properties__item properties__item--percent">
+                      -11%
+                    </p>
+                  </td>
+                  <td data-label="Period">
+                    <p class="properties__item properties__item--owners">
+                      5.5k
+                    </p>
+                  </td>
+                  <td data-label="Period">
+                    <p class="properties__item properties__item--items">
+                      12.5k
+                    </p>
+                  </td>
                 </tr>
-                
+
                 <tr>
                   <td scope="row">
                     <div class="best-collections">
-                      <img src="img/topNft__icon1.png" alt="" class="table__icon" />
+                      <img
+                        src="img/topNft__icon1.png"
+                        alt=""
+                        class="table__icon"
+                      />
                       <div class="collection__description">
                         <h5 class="description__label">Cool Cyber Apes</h5>
                         <p class="description__author">@cybasseman</p>
                       </div>
                     </div>
                   </td>
-                  <td data-label="Due Date"><p class="properties__item properties__item--volume">0.24 BTC</p></td>
-                  <td data-label="Amount"><p class="properties__item properties__item--percent">+25%</p></td>
-                  <td data-label="Period"><p class="properties__item properties__item--owners"> 5.5k</p></td>
-                  <td data-label="Period"><p class="properties__item properties__item--items">12.5k</p></td>
+                  <td data-label="Due Date">
+                    <p class="properties__item properties__item--volume">
+                      0.24 BTC
+                    </p>
+                  </td>
+                  <td data-label="Amount">
+                    <p class="properties__item properties__item--percent">
+                      +25%
+                    </p>
+                  </td>
+                  <td data-label="Period">
+                    <p class="properties__item properties__item--owners">
+                      5.5k
+                    </p>
+                  </td>
+                  <td data-label="Period">
+                    <p class="properties__item properties__item--items">
+                      12.5k
+                    </p>
+                  </td>
                 </tr>
               </tbody>
             </table>
           </div>
         </div>
-        
-        
+
         <div class="hiddenSidebar">
           <img
             src="img/showMenu-icon.png"
@@ -430,7 +513,9 @@
             <div class="hiddenSidebar__header topSellers">
               <div class="topSellers__header">
                 <h3 class="topSellers__label">Top Sellers</h3>
-                <a href="#" class="all-collections__link topSellers__link">See all</a>
+                <a href="#" class="all-collections__link topSellers__link"
+                  >See all</a
+                >
               </div>
               <ul class="topSellers__items">
                 <li class="topSellers__item">
@@ -526,20 +611,34 @@
             <li class="adaptiveSidebar__item adaptiveSidebar__item--dashboard">
               <a href="#">Dashboard</a>
             </li>
-            <li class="adaptiveSidebar__item adaptiveSidebar__item--marketplace">
+            <li
+              class="adaptiveSidebar__item adaptiveSidebar__item--marketplace"
+            >
               <a href="#">Marketplace</a>
             </li>
-            <li class="adaptiveSidebar__item adaptiveSidebar__item--messages"><a>Messages</a></li>
+            <li class="adaptiveSidebar__item adaptiveSidebar__item--messages">
+              <a>Messages</a>
+            </li>
           </ul>
           <ul class="adaptiveSidebar__menu">
-            <li class="adaptiveSidebar__item adaptiveSidebar__item--myCollection">
+            <li
+              class="adaptiveSidebar__item adaptiveSidebar__item--myCollection"
+            >
               <a href="#">My Collection</a>
             </li>
-            <li class="adaptiveSidebar__item adaptiveSidebar__item--wallet"><a>Wallet</a></li>
-            <li class="adaptiveSidebar__item adaptiveSidebar__item--history"><a>History</a></li>
-            <li class="adaptiveSidebar__item adaptiveSidebar__item--settings"><a>Settings</a></li>
+            <li class="adaptiveSidebar__item adaptiveSidebar__item--wallet">
+              <a>Wallet</a>
+            </li>
+            <li class="adaptiveSidebar__item adaptiveSidebar__item--history">
+              <a>History</a>
+            </li>
+            <li class="adaptiveSidebar__item adaptiveSidebar__item--settings">
+              <a>Settings</a>
+            </li>
           </ul>
-          <div class="adaptiveSidebar__resources adaptiveSidebar__item sidebar__item--Resources">
+          <div
+            class="adaptiveSidebar__resources adaptiveSidebar__item sidebar__item--Resources"
+          >
             <a href="#">Resources</a>
           </div>
         </div>

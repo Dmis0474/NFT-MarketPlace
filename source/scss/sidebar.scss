@@ -67,6 +67,8 @@
     }
     &--Resources {
       background-image: url(../img/resources.svg);
+      margin-top: 134px;
+      margin-left: 25px;
       &:hover {
         background-image: url(../img/resources-BLUE.svg);
       }
@@ -75,10 +77,6 @@
 
   &__menu {
     margin-top: 154px;
-    margin-left: 25px;
-  }
-  &__resources {
-    margin-top: 134px;
     margin-left: 25px;
   }
   &__advertise {
@@ -123,21 +121,22 @@
 @media screen and(max-width: 768px) {
   .sidebar {
     min-width: 60px;
+    transition: all 0.5s ease 0.5s;
     &__item {
       a {
         opacity: 0;
+        transition: all 0.5s ease 0.5s;
+        white-space: nowrap;
       }
-      
     }
     &__advertise {
-      display: none;
+      opacity: 0;
     }
   }
 }
 
-
 @media screen and (max-width: 576px) {
   .sidebar {
-    display: none ;
+    display: none;
   }
 }

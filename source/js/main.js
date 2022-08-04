@@ -4,10 +4,9 @@ function showMenu() {
 function showRightSidebar() {
   document.querySelector(".adaptiveSidebar").classList.toggle("visible");
 }
-function moveSidebar() {
-  document.querySelector(".sidebar").classList.toggle("sidebarMove");
+function toggleSidebar() {
+  document.querySelector(".sidebar").classList.toggle("sidebar-open");
 }
-
 
 $(document).ready(function () {
   $(".itemsList").slick({

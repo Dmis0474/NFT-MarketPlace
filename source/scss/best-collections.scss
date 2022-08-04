@@ -23,7 +23,6 @@
       line-height: 22px;
       color: #d9d9d9;
     }
-    
   }
 }
 .table-block {
@@ -172,11 +171,9 @@ table th {
 
 
 @media screen and(max-width:768px) {
-    table td {
-        .properties__item--volume {
-            background-image: none;
-        }
-        
+  table td {
+    .properties__item--volume {
+      background-image: none;
     }
-    
+  }
 }

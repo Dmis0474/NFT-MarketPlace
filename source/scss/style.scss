@@ -14,8 +14,6 @@ body {
   font-size: 18px;
   line-height: 33px;
   font-weight: 400;
-  // overflow-x: hidden;
-  // overflow-y: hidden;
   background-color: #1c1e2a;
   background-size: cover;
   background-repeat: no-repeat;
@@ -85,10 +83,10 @@ a {
   }
 }
 
-.sidebarMove {
+.sidebar-open {
   transition: all 0.4s ease-in-out 0.5s;
   min-width: 200px;
-  display: block;
+  opacity: 1;
   .sidebar__item {
     a {
       opacity: 1;
@@ -96,7 +94,7 @@ a {
     }
   }
   .sidebar__advertise {
-    display: block;
+    opacity: 1;
     transition: all 0.4s ease-in-out 0.8s;
   }
 }
