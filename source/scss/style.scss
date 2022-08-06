@@ -99,6 +99,13 @@ a {
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .active {
+    transform: translateX(-260px);
+  }
+}
+
+
 @media screen and (max-width: 576px) {
   .sidebar {
     display: none;
